@@ -1,0 +1,51 @@
+html {
+    box-sizing: border-box;
+    font-size: 7px;
+
+    @include screen-up(sm) {
+        font-size: 8px;
+    }
+
+    @include screen-up(md) {
+        font-size: 9px;
+    }
+
+    @include screen-up(lg) {
+        font-size: 10px;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    //font-family: $font-primary;
+    font-size: 14px;
+    line-height: 1.5;
+    //color: $color-text;
+}
+
+::selection {
+    //color: $color-white;
+    //background-color: $color-primary;
+}
+
+a:not([class]),
+a[class=''] {
+    @extend %transition;
+    text-decoration: none;
+    //color: $color-text;
+    border-bottom: 1px solid currentColor;
+
+    &:hover,
+    &:focus {
+        //color: $color-primary;
+    }
+
+    &:active {
+        //color: $color-primary-active;
+    }
+}
