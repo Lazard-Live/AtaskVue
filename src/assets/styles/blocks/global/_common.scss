@@ -22,20 +22,21 @@ html {
 }
 
 body {
-    //font-family: $font-primary;
+    font-family: $font-primary;
     font-size: 14px;
     line-height: 1.5;
+    min-height: 100vh;
     //color: $color-text;
 }
 
 ::selection {
-    //color: $color-white;
-    //background-color: $color-primary;
+    color: $color-white;
+    background-color: $color-primary;
 }
 
 a:not([class]),
 a[class=''] {
-    @extend %transition;
+    //@extend %transition;
     text-decoration: none;
     //color: $color-text;
     border-bottom: 1px solid currentColor;

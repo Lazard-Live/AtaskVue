@@ -1,0 +1,45 @@
+.headerBlock {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+
+  &__contaner {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+
+  &__nav {
+    display: inline-flex;
+    list-style-type: none;
+  }
+
+  &__logo,
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: #000;
+  }
+
+  &__link {
+    padding-left: 24px;
+  }
+
+  &__logo {
+    padding: 0;
+    transition: 0.2s ease;
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    &:hover {
+      color: red;
+      box-shadow: 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      color: #c0301c;
+    }
+  }
+}

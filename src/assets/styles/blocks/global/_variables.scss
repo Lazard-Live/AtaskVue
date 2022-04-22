@@ -1,11 +1,10 @@
-//$font-primary: 'Roboto Slab', serif;
-//$font-secondary: 'Montserrat', sans-serif;
-//$color-primary: #c0301c;
+$font-primary: 'Open Sans', serif;
+$color-primary: #c0301c;
 //$color-primary-active: darken($color-primary, 10%);
 //$color-text: #555;
 //$color-text-active: darken($color-text, 10%);
 //$color-gray: #f8f8f8;
-//$color-white: #fff;
+$color-white: #fff;
 //$color-white-darker: darken($color-white, 15%);
 //$color-white-darkest: darken($color-white, 30%);
 //$color-black: #000;
@@ -13,11 +12,11 @@
 $point-sm: 576px;
 $point-md: 768px;
 $point-lg: 992px;
-$point-xl: 1200px;
+$point-xl: 1420px;
 
-%transition {
-    transition: 0.3s ease;
-}
+//%transition {
+//    transition: 0.3s ease;
+//}
 
 @mixin screen-up($point) {
     $is-sm: $point == sm;

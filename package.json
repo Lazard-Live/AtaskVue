@@ -12,6 +12,7 @@
     "node-sass": "^7.0.1",
     "normalize.css": "^8.0.1",
     "sass-loader": "^12.6.0",
+    "svg-sprite-loader": "^6.0.11",
     "vue": "^3.2.13"
   },
   "devDependencies": {

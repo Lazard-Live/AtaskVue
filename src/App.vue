@@ -1,31 +1,31 @@
 <template>
-  <preHeader></preHeader>
-
+  <header-block />
+  <content-block />
+  <footer-block />
 </template>
 
 <script>
-import preHeader from './components/preHeader.vue'
-
+import headerBlock from "./components/headerBlock/headerBlock.vue";
+import contentBlock from "./components/contentBlock/contentBlock.vue";
+import footerBlock from "@/components/footerBlock/footerBlock.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    preHeader
-  }
-}
+    headerBlock,
+    contentBlock,
+    footerBlock,
+  },
+};
 </script>
 
-<style lang="scss">
-
-body {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
+<style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 </style>
